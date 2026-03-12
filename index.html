@@ -88,9 +88,9 @@
     display: inline-block;
     font-size: 18px;
     font-weight: 700;
-    color: var(--accent);
-    background: var(--accent-glow);
-    border: 1px solid var(--border-accent);
+    color: var(--ocean);
+    background: var(--ocean-glow);
+    border: 1px solid var(--border);
     padding: 8px 22px;
     border-radius: 24px;
     letter-spacing: 0.02em;
@@ -112,42 +112,10 @@
   h1 .cracked {
     position: relative;
     display: inline-block;
-    color: #fff;
-  }
-  h1 .cracked::after {
-    content: '';
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    background: linear-gradient(
-      145deg,
-      transparent 0%,
-      transparent 38%,
-      var(--dark) 38%,
-      var(--dark) 40.5%,
-      transparent 40.5%,
-      transparent 43%,
-      var(--dark) 43%,
-      var(--dark) 44.5%,
-      transparent 44.5%,
-      transparent 47%,
-      var(--dark) 47%,
-      var(--dark) 49%,
-      transparent 49%,
-      transparent 51%,
-      var(--dark) 51%,
-      var(--dark) 52.5%,
-      transparent 52.5%,
-      transparent 55%,
-      var(--dark) 55%,
-      var(--dark) 57%,
-      transparent 57%,
-      transparent 100%
-    );
-    pointer-events: none;
-    z-index: 1;
+    color: var(--ocean);
+    text-decoration: line-through;
+    text-decoration-color: #fff;
+    text-decoration-thickness: 3px;
   }
 
   .hero-sub {

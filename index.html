@@ -71,7 +71,7 @@
   }
   .nav-links { display: flex; gap: 24px; }
   .nav-links a {
-    font-size: 13px;
+    font-size: 14px;
     color: var(--text-muted);
     text-decoration: none;
     transition: color 0.2s;
@@ -86,15 +86,14 @@
 
   .hero-tag {
     display: inline-block;
-    font-size: 11px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 600;
     color: var(--accent);
     background: var(--accent-glow);
     border: 1px solid var(--border-accent);
-    padding: 5px 16px;
+    padding: 6px 18px;
     border-radius: 20px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    letter-spacing: 0.04em;
     margin-bottom: 24px;
   }
 
@@ -147,12 +146,11 @@
   /* Sections */
   .section { padding: 64px 0; }
   .section-label {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--ocean);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+    margin-bottom: 8px;
   }
   .section-label.green { color: var(--accent); }
   .section-label.warm { color: var(--warm); }
@@ -175,7 +173,7 @@
   /* Divider */
   hr { border: none; border-top: 1px solid var(--border); margin: 0; }
 
-  /* The Problem / Solution — side by side on desktop */
+  /* The Problem / Solution — side by side */
   .compare-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -191,12 +189,10 @@
     padding: 28px;
   }
   .problem-block h3 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     color: #ef4444;
     margin-bottom: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
   }
   .problem-block ul { list-style: none; padding: 0; }
   .problem-block li {
@@ -226,12 +222,10 @@
     padding: 28px;
   }
   .solution-block h3 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--accent);
     margin-bottom: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
   }
   .solution-block ul { list-style: none; padding: 0; }
   .solution-block li {
@@ -257,10 +251,10 @@
   /* Quote */
   .manifesto-quote {
     border-left: 3px solid var(--ocean);
-    padding: 20px 24px;
+    padding: 24px 28px;
     background: var(--ocean-glow);
-    border-radius: 0 12px 12px 0;
-    margin: 32px 0;
+    border-radius: 0 14px 14px 0;
+    margin: 36px 0;
     font-size: 17px;
     color: var(--text);
     font-style: italic;
@@ -268,9 +262,9 @@
   }
   .manifesto-quote .attribution {
     font-style: normal;
-    font-size: 13px;
+    font-size: 14px;
     color: var(--text-muted);
-    margin-top: 10px;
+    margin-top: 12px;
     display: block;
   }
 
@@ -284,32 +278,18 @@
   }
   .impact-image {
     width: 100%;
-    height: 280px;
+    height: 300px;
     object-fit: cover;
     display: block;
   }
-  .impact-image-placeholder {
-    width: 100%;
-    height: 280px;
-    background: linear-gradient(135deg, rgba(245,158,11,0.08) 0%, rgba(34,197,94,0.08) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .impact-image-placeholder span {
-    font-size: 14px;
-    color: var(--text-muted);
-  }
   .impact-body {
-    padding: 32px;
+    padding: 36px;
   }
   .impact-body h3 {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 800;
     color: #fff;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     letter-spacing: -0.5px;
   }
   .impact-body p {
@@ -324,9 +304,10 @@
     align-items: center;
     gap: 6px;
     color: var(--warm);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     text-decoration: none;
+    margin-top: 4px;
     transition: gap 0.2s;
   }
   .impact-body .impact-link:hover { gap: 10px; }
@@ -343,11 +324,11 @@
     background: var(--dark-2);
     border: 1px solid var(--border);
     border-radius: 14px;
-    padding: 22px 18px;
+    padding: 24px 18px;
     text-align: center;
   }
   .stat-number {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 800;
     color: var(--ocean);
     letter-spacing: -1px;
@@ -368,34 +349,34 @@
   }
   .step {
     display: flex;
-    gap: 16px;
+    gap: 18px;
     align-items: flex-start;
     background: var(--dark-2);
     border: 1px solid var(--border);
     border-radius: 14px;
-    padding: 22px;
+    padding: 24px;
     transition: border-color 0.2s;
   }
   .step:hover { border-color: rgba(14,165,233,0.3); }
   .step-num {
     flex-shrink: 0;
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
     border-radius: 10px;
     background: var(--ocean-glow);
     border: 1px solid var(--border);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 800;
     color: var(--ocean);
   }
   .step h3 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     color: #fff;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
   .step p {
     font-size: 15px;
@@ -405,47 +386,47 @@
   }
 
   /* Services */
-  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 28px; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
   @media (max-width: 520px) { .cards { grid-template-columns: 1fr; } }
   .card {
     background: var(--dark-2);
     border: 1px solid var(--border);
     border-radius: 14px;
-    padding: 22px;
+    padding: 24px;
     transition: border-color 0.2s;
   }
   .card:hover { border-color: rgba(14,165,233,0.3); }
-  .card h3 { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 8px; }
-  .card p { font-size: 14px; color: var(--text-body); line-height: 1.65; margin: 0; }
+  .card h3 { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+  .card p { font-size: 14px; color: var(--text-body); line-height: 1.7; margin: 0; }
 
   /* Book section */
   .book-section {
     background: var(--dark-2);
     border: 1px solid var(--border);
     border-radius: 20px;
-    padding: 48px 40px;
+    padding: 52px 40px;
     text-align: center;
     margin: 64px 0;
   }
   .book-section h2 {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 800;
     letter-spacing: -0.7px;
     color: #fff;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
   .book-section p {
     font-size: 17px;
     color: var(--text-body);
     line-height: 1.75;
-    max-width: 480px;
+    max-width: 500px;
     margin: 0 auto 32px;
   }
   .book-section .promise {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 24px;
     margin-bottom: 32px;
   }
   .book-section .promise span {
@@ -458,7 +439,7 @@
   .book-section .promise .check {
     color: var(--accent);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
   }
 
   /* Footer */
@@ -482,9 +463,13 @@
   /* Mobile tweaks */
   @media (max-width: 520px) {
     .hero { padding: 56px 0 48px; }
+    .section-label { font-size: 16px; }
+    .section h2 { font-size: 26px; }
     .book-section { padding: 36px 24px; }
-    .manifesto-quote { font-size: 15px; }
+    .book-section h2 { font-size: 24px; }
+    .manifesto-quote { font-size: 15px; padding: 20px 22px; }
     .impact-body { padding: 24px; }
+    .impact-body h3 { font-size: 20px; }
   }
 </style>
 </head>
@@ -711,7 +696,7 @@
       </div>
       <a href="https://calendly.com/snyperagency" class="cta-primary" target="_blank">Book your free 30-min call</a>
 
-      <div style="margin-top:20px;font-size:13px;color:var(--text-muted)">
+      <div style="margin-top:20px;font-size:14px;color:var(--text-muted)">
         Rather reach out directly?
         <a href="https://x.com/AidanUttinger" target="_blank" style="color:var(--ocean)">Find me on X</a>
       </div>

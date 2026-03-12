@@ -447,6 +447,15 @@
     font-size: 15px;
   }
 
+  /* Calendly embed */
+  .calendly-embed {
+    margin-top: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--dark-3);
+  }
+
   /* Footer */
   footer {
     padding: 32px 0 56px;
@@ -699,9 +708,12 @@
         <span><span class="check">&#10003;</span> No retainer pitch</span>
         <span><span class="check">&#10003;</span> Honest assessment</span>
       </div>
-      <a href="https://calendly.com/snyperagency" class="cta-primary" target="_blank">Book your free 30-min call</a>
+      <div class="calendly-embed">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/snyperagency?hide_gdpr_banner=1&background_color=0c1a26&text_color=e2edf5&primary_color=0ea5e9" style="min-width:320px;width:100%;height:700px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      </div>
 
-      <div style="margin-top:20px;font-size:14px;color:var(--text-muted)">
+      <div style="margin-top:24px;font-size:14px;color:var(--text-muted)">
         Rather reach out directly?
         <a href="https://x.com/AidanUttinger" target="_blank" style="color:var(--ocean)">Find me on X</a>
       </div>
